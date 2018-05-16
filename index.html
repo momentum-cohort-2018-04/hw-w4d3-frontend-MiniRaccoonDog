@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Note WebApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
+  <script src="script.js" defer></script>
+  <!-- <script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.scss" />
+
+</head>
+
+<body>
+  <h1>Note</h1>
+  <div class="add hidden">
+    <form id="notemaker">
+      <textarea class="textarea" name="text" rows="6" cols="36" placeholder="Textarea"></textarea>
+      <input type="text" name="tags" placeholder="Optional Tags">
+      <div class="input-group">
+        <input type="text" name="title" placeholder="Title of Note">
+        <button type="submit" id="addnew" class="button">Add Note</button>
+      </div>
+    </form>
+    <button type="button" id='cancel-note' class="button-block">Cancel</button>
+  </div>
+  
+  <div class="edit hidden">
+      <form id="notechanger">
+        <textarea class="textarea" name="text" rows="6" cols="36" placeholder="Textarea"></textarea>
+        <input type="text" name="tags" placeholder="Optional Tags">
+        <div class="input-group">
+          <input type="text" name="title" placeholder="Title of Note">
+          <button type="submit" id="addnew" class="button">Edit Note</button>
+        </div>
+      </form>
+      <button type="button" id='cancel-note' class="button-block">Cancel</button>
+    </div>
+
+
+
+
+
+
+  <button class="button" id="toggleadd">New Note</button>
+  <button type="button" id="update" class="button-block">UPDATE PAGE</button>
+  <div class="current" id="allnotes">
+    <div class="note" data-id=''>
+      <h3>This is my older note</h3>
+      <div class="tags__bar">
+          <span class="badge">Art</span>
+          <span class="badge">Thoughts</span>
+          <span class="badge">May</span>
+      </div>
+      <h5 class="date">Date: may 18, 2018</h5>
+      <p>My work explores the relationship between the body and unwanted gifts. With influences as diverse as Camus and John Lennon, new insights are distilled from both mundane and transcendant narratives.</p>
+      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button class="button button-light button-block delete" data-id="_23123123123" >Delete Note</button>
+    </div>
+    <div class="note" data-id=''>
+      <h3>This is my new note</h3>
+      <div class="tags__bar">
+          <span class="badge">Childhood</span>
+          <span class="badge">Relationships</span>
+          <span class="badge">May</span>
+      </div>
+      <h5 class="date">Date: may 19, 2018</h5>
+      <p>Ever since I was a pre-adolescent I have been fascinated by the theoretical limits of relationships. What starts out
+        as hope soon becomes corrupted into a carnival of lust, leaving only a sense of chaos and the dawn of a new order.
+        As subtle replicas become frozen through emergent and repetitive practice, the viewer is left with a testament to
+        the limits of our culture.
+      </p>
+      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button class="button button-light button-block delete" data-id="74545723">Delete Note</button>
+    </div>
+    <div class="note" data-id=''>
+      <h3>This is my newer note</h3>
+      <div class="tags__bar">
+          <span class="badge">Art</span>
+          <span class="badge">Sports</span>
+          <span class="badge">May</span>
+      </div>
+      <h5 class="date">Date: may 20, 2018</h5>
+      <p>My work explores the relationship between consumerist fetishism and football chants. With influences as diverse as
+        Nietzsche and John Lennon, new synergies are created from both explicit and implicit dialogues.
+      </p>
+      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button class="button button-light button-block delete" data-id="_21423147544423">Delete Note</button>
+    </div>
+    <div class="note" data-id=''>
+      <h3>This is my newest note</h3>
+      <div class="tags__bar">
+          <span class="badge">School</span>
+          <span class="badge">Thoughts</span>
+          <span class="badge">May</span>
+          <span class="badge">Art</span>
+      </div>
+      <h5 class="date">Date: may 21, 2018</h5>
+      <p>Ever since I was a pre-adolescent I have been fascinated by the essential unreality of the zeitgeist. What starts out
+        as yearning soon becomes finessed into a cacophony of power, leaving only a sense of failing and the unlikelihood
+        of a new order. As subtle phenomena become clarified through emergent and academic practice, the viewer is left with
+        a testament to the limits of our era.
+      </p>
+      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button class="button button-light button-block delete" data-id="_23123123233426123">Delete Note</button>
+    </div>
+    <div class="note" data-id=''>
+        <h3>This is my newest note</h3>
+        <div class="tags__bar">
+            <span class="badge">School</span>
+            <span class="badge">Thoughts</span>
+            <span class="badge">May</span>
+            <span class="badge">Art</span>
+        </div>
+        <h5 class="date">Date: may 21, 2018</h5>
+        <p>Ever since I was a pre-adolescent I have been fascinated by the essential unreality of the zeitgeist. What starts out
+          as yearning soon becomes finessed into a cacophony of power, leaving only a sense of failing and the unlikelihood
+          of a new order. As subtle phenomena become clarified through emergent and academic practice, the viewer is left with
+          a testament to the limits of our era.
+        </p>
+        <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+        <button class="button button-light button-block delete" data-id="_23123123123"> Delete Note</button>
+    </div>
+  </div>
+</body>
+
+
+</html>
