@@ -15,7 +15,7 @@
 
 <body>
   <h1>Note</h1>
-  <div class="add hidden">
+  <div class="window__add hidden">
     <form id="notemaker">
       <textarea class="textarea" name="text" rows="6" cols="36" placeholder="Textarea"></textarea>
       <input type="text" name="tags" placeholder="Optional Tags">
@@ -27,25 +27,14 @@
     <button type="button" id='cancel-note' class="button-block">Cancel</button>
   </div>
   
-  <div class="edit hidden">
-      <form id="notechanger">
-        <textarea class="textarea" name="text" rows="6" cols="36" placeholder="Textarea"></textarea>
-        <input type="text" name="tags" placeholder="Optional Tags">
-        <div class="input-group">
-          <input type="text" name="title" placeholder="Title of Note">
-          <button type="submit" id="addnew" class="button">Edit Note</button>
-        </div>
-      </form>
-      <button type="button" id='cancel-note' class="button-block">Cancel</button>
-    </div>
-
-
-
-
-
-
+  <div class="window__edit hidden">
+    <form id="notechanger">  
+    </form>
+    <button type="button" id='cancel-edit' class="button-block">Cancel</button>
+  </div>
+  
   <button class="button" id="toggleadd">New Note</button>
-  <button type="button" id="update" class="button-block">UPDATE PAGE</button>
+  <!-- <button type="button" id="update" class="button-block">UPDATE PAGE</button> -->
   <div class="current" id="allnotes">
     <div class="note" data-id=''>
       <h3>This is my older note</h3>
@@ -56,7 +45,7 @@
       </div>
       <h5 class="date">Date: may 18, 2018</h5>
       <p>My work explores the relationship between the body and unwanted gifts. With influences as diverse as Camus and John Lennon, new insights are distilled from both mundane and transcendant narratives.</p>
-      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button type="button" name=0 class="button right edit" data-id=''>Edit</button>
       <button class="button button-light button-block delete" data-id="_23123123123" >Delete Note</button>
     </div>
     <div class="note" data-id=''>
@@ -72,7 +61,7 @@
         As subtle replicas become frozen through emergent and repetitive practice, the viewer is left with a testament to
         the limits of our culture.
       </p>
-      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button type="button" name=1 class="button right edit" data-id=''>Edit</button>
       <button class="button button-light button-block delete" data-id="74545723">Delete Note</button>
     </div>
     <div class="note" data-id=''>
@@ -86,7 +75,7 @@
       <p>My work explores the relationship between consumerist fetishism and football chants. With influences as diverse as
         Nietzsche and John Lennon, new synergies are created from both explicit and implicit dialogues.
       </p>
-      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button type="button" name=2 class="button right edit" data-id=''>Edit</button>
       <button class="button button-light button-block delete" data-id="_21423147544423">Delete Note</button>
     </div>
     <div class="note" data-id=''>
@@ -103,7 +92,7 @@
         of a new order. As subtle phenomena become clarified through emergent and academic practice, the viewer is left with
         a testament to the limits of our era.
       </p>
-      <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+      <button type="button" name=3 class="button right edit" data-id=''>Edit</button>
       <button class="button button-light button-block delete" data-id="_23123123233426123">Delete Note</button>
     </div>
     <div class="note" data-id=''>
@@ -120,7 +109,7 @@
           of a new order. As subtle phenomena become clarified through emergent and academic practice, the viewer is left with
           a testament to the limits of our era.
         </p>
-        <button type="button right" value='edit' class="button-sm" data-id=''>Edit</button>
+        <button type="button" name=4 class="button right edit" data-id=''>Edit</button>
         <button class="button button-light button-block delete" data-id="_23123123123"> Delete Note</button>
     </div>
   </div>

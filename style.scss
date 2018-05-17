@@ -12,6 +12,22 @@ body{
 .hidden{
   display:none;
 }
+.window__edit{
+  // position:absolute;
+  position:fixed;
+    top:25%;
+    left:25%;
+  margin: 1rem 0;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid rgba(0, 0, 0, 0.25) 4rem;
+  box-sizing:content-box;
+}
+
+
+.hidden{
+  display:none;
+}
 .invisible{
   visibility:hidden;
 }
@@ -19,7 +35,7 @@ body{
   align-items:flex-start;
 }
 
-.add{
+.window__add{
   position:absolute;
     top:25%;
     left:25%;
@@ -65,3 +81,4 @@ body{
 .delete{
   align-self: flex-end;
 }
+
