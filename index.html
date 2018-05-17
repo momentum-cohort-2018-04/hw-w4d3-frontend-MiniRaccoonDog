@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <h1>Note</h1>
+    <div class="controls"><h1>Note</h1></div>
   <div class="window__add hidden">
     <form id="notemaker">
       <textarea class="textarea" name="text" rows="6" cols="36" placeholder="Textarea"></textarea>
@@ -28,18 +28,19 @@
   </div>
   
   <div class="window__edit hidden">
-    <form id="notechanger">  
+    <form id="notechanger" name=''>  
     </form>
     <button type="button" id='cancel-edit' class="button-block">Cancel</button>
   </div>
-  
-  <button class="button" id="toggleadd">New Note</button>
-  <!-- <button type="button" id="update" class="button-block">UPDATE PAGE</button> -->
+  <div class="controls">
+      <button class="button" id="toggleadd">New Note</button>
+      <button type="button" id="update" >All Notes</button>
+  </div>
   <div class="current" id="allnotes">
     <div class="note" data-id=''>
       <h3>This is my older note</h3>
       <div class="tags__bar">
-          <span class="badge">Art</span>
+          <span href="#" class="badge">Art</span>
           <span class="badge">Thoughts</span>
           <span class="badge">May</span>
       </div>
