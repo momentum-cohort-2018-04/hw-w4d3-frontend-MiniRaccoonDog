@@ -65,3 +65,5 @@ typings/
 # End of https://www.gitignore.io/api/node
 dist/
 .cache/
+topcoat-0.8.0
+topcoat-mobile-light.css

@@ -1,6 +1,13 @@
 {
   "private": true,
   "devDependencies": {
+    "node-sass": "^4.9.0",
     "parcel-bundler": "^1.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "moment": "^2.22.1",
+    "shoelace-css": "^1.0.0-beta24",
+    "superagent": "^3.8.3"
   }
 }
